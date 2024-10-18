@@ -8,7 +8,7 @@
 
 
   
-  <uri name="http://purl.obolibrary.org/obo/clkgho/components/efo_meriot.owl" uri="components/efo_meriot.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/clkgho/components/efo_mireot.owl" uri="components/efo_mireot.owl"/>
   
  
   <uri name="http://purl.obolibrary.org/obo/clkgho/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
