@@ -1,0 +1,14 @@
+format-version: 1.2
+data-version: clkgho/releases/2024-10-18/clkgho-full.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+ontology: clkgho/clkgho-full
+property_value: dcterms:description "None" xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/unspecified
+property_value: dcterms:title "CL KG Helper Ontology" xsd:string
+property_value: owl:versionInfo "2024-10-18" xsd:string
+
+[Term]
+id: CLKGHO:0000000
+name: root node
+
