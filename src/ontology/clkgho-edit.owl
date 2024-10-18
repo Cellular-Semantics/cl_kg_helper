@@ -15,6 +15,7 @@ Ontology(<http://purl.obolibrary.org/obo/clkgho.owl>
 
 
 Import(<http://purl.obolibrary.org/obo/clkgho/patterns/definitions.owl>)
+Import(<http://purl.obolibrary.org/obo/clkgho/components/efo_mireot.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "CL KG Helper Ontology")

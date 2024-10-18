@@ -1,5 +1,8 @@
 format-version: 1.2
 data-version: clkgho/releases/2024-10-18/clkgho-simple.owl
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: efo http://www.ebi.ac.uk/efo/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: clkgho/clkgho-simple
 property_value: owl:versionInfo "2024-10-18" xsd:string

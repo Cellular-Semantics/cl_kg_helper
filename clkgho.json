@@ -22,6 +22,439 @@
       "lbl" : "root node",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000070",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0001457",
+      "lbl" : "RNA assay",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An assay with input RNA"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "James Malone"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/ArrayExpress_label",
+          "val" : "RNA assay"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0002697",
+      "lbl" : "assay by high throughput sequencer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An assay which uses high throughput sequencing technology to determine the sequence of nucleic acids"
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "high throughput sequencing assay"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Solexa sequencing of coding RNA"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Helen Parkinson"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0002772",
+      "lbl" : "assay by molecule",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/ArrayExpress_label",
+          "val" : "Assay by molecule"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0002773",
+      "lbl" : "assay by instrument",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/ArrayExpress_label",
+          "val" : "Assay by technology"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0003740",
+      "lbl" : "assay by sequencer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An assay that exploits a sequencer as the instrument to find results."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "sequencing assay"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "James Malone"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/ArrayExpress_label",
+          "val" : "Sequencing assay"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0008931",
+      "lbl" : "Smart-seq2",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost."
+        },
+        "xrefs" : [ {
+          "val" : "PMID:24056875"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0008994",
+      "lbl" : "spatial transcriptomics",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "assay that allows visualization and quantitative analysis of the transcriptome with spatial resolution in individual tissue sections"
+        },
+        "xrefs" : [ {
+          "val" : "PMID:27365449"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0008995",
+      "lbl" : "10x technology",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10x is a \"synthetic long-read\" technology and works by capturing a barcoded oligo-coated gel-bead and 0.3x genome copies into a single emulsion droplet, processing the equivalent of 1 million pipetting steps. Successive versions of the 10x chemistry use different barcode locations to improve the sequencing yield and quality of 10x experiments."
+        },
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "10X"
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "10x"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "10x Genomics"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "10x single cell library construction"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x sequencing"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0009899",
+      "lbl" : "10x 3' v2",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "10X 3' v2"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X 3' v2 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X v2"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X v2 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10XV2"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 3' v2 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x v2"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x v2 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x_v2"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0009900",
+      "lbl" : "10x 5' v2",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10X 5' v2 is the second version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "10X 5' v2"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X 5' v2 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 5' v2 sequencing"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0009922",
+      "lbl" : "10x 3' v3",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "10X 3' v3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X v3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X v3 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10XV3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 3' v3 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x v3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x v3 sequencing"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0010183",
+      "lbl" : "single cell library construction",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A library preparation process that starts from a single cell."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "single cell library preparation"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "single-cell library construction"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "single-cell library preparation"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Olamidipupo Ajigboye"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0010184",
+      "lbl" : "Smart-like",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Library construction method using the SMART (Switching Mechanism at the 5' end of the RNA Template) or SMARTer technology, producing full-length cDNA libraries."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "Olamidipupo Ajigboye"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0010961",
+      "lbl" : "Visium Spatial Gene Expression",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.",
+          "xrefs" : [ "http://orcid.org/0000-0001-7505-5418", "https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf" ]
+        },
+        "subsets" : [ "http://www.ebi.ac.uk/efo/added_for_HCA" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "10X Visium"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Visium"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0011025",
+      "lbl" : "10x 5' v1",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript."
+        },
+        "subsets" : [ "http://www.ebi.ac.uk/efo/added_for_HCA" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "10X 5' v1"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "10x 5' v1"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10X 5' v3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 5' v1 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 5' v3"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x 5' v3 sequencing"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "10x v1 5' sequencing"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0030003",
+      "lbl" : "10x 3' transcription profiling",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10x 3' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3' end.",
+          "xrefs" : [ "https://orcid.org/0000-0002-8674-0039" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0030004",
+      "lbl" : "10x 5' transcription profiling",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "10x 5' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5' end.",
+          "xrefs" : [ "https://orcid.org/0000-0002-8674-0039" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0030005",
+      "lbl" : "spatial transcriptomics by high-throughput sequencing",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A spatial transcriptomics assay that measures spatially defined transcription by high-throughput sequencing.",
+          "xrefs" : [ "https://orcid.org/0000-0002-8674-0039" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0030062",
+      "lbl" : "Slide-seqV2",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "More sensitive version of the Slide-seq method for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, which differs from Slide-seq in the use of a monobase encoding scheme with sequencing by ligation using sequential interrogation by offset primer, and improved parameters for split-pool synthesis of barcoded beads.",
+          "xrefs" : [ "http://orcid.org/0000-0001-8134-3037", "https://www.biorxiv.org/content/10.1101/2020.03.12.989806v1" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "val" : "2021-12-16T08:53:05Z"
+        } ]
+      }
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0030080",
+      "lbl" : "10x transcription profiling",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The 10x-based single-cell technology that sequences mRNA molecules.",
+          "xrefs" : [ "http://orcid.org/0000-0002-3564-4813" ]
+        },
+        "comments" : [ "This term should only be used when a single-cell RNA-seq dataset is known to be generated using 10x, but the specific protocol (5' vs. 3') isn't specified. Whenever that information is available, please use EFO:0030003 '10x 3' transcription profiling' or EFO:0030004 '10x 5' transcription profiling'." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/creator",
+          "val" : "paola"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/EBISPOT/efo/issues/1558"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY",
@@ -36,6 +469,139 @@
       "lbl" : "title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/ArrayExpress_label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000070",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0001457",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000070"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0001457",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0002772"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0002697",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0003740"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0002773",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000070"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0003740",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0002773"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0008931",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0001457"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0008931",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0010184"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0008994",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0001457"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0008995",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0010183"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0009899",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030003"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0009900",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030004"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0009922",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030003"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0010184",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0010183"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0010961",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0008995"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0010961",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030005"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0011025",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030004"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030003",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030080"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030004",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030080"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030005",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0002697"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030005",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0008994"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030062",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0010183"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030062",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0030005"
+    }, {
+      "sub" : "http://www.ebi.ac.uk/efo/EFO_0030080",
+      "pred" : "is_a",
+      "obj" : "http://www.ebi.ac.uk/efo/EFO_0008995"
     } ]
   } ]
 }
