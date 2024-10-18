@@ -1,0 +1,19 @@
+id: clkgho
+title: "CL KG Helper Ontology"
+github_org: Cellular-Semantics
+git_main_branch: main
+repo: cl_kg_helper
+use_dosdps: TRUE
+release_artefacts: 
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+robot_java_args: '-Xmx16G'
+components:
+  products:
+    - filename: efo_meriot.owl
