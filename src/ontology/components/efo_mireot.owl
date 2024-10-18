@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ebi.ac.uk/efo/efo-base.owl#"
+     xml:base="http://www.ebi.ac.uk/efo/efo-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/efo/efo-base.owl">
+        <owl:versionIRI rdf:resource="http://www.ebi.ac.uk/efo/releases/v3.71.0/efo-base.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/ArrayExpress_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ArrayExpress_label"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001457 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001457">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002772"/>
+        <obo:IAO_0000115>An assay with input RNA</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:ArrayExpress_label>RNA assay</efo:ArrayExpress_label>
+        <rdfs:label>RNA assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002697 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002697">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003740"/>
+        <obo:IAO_0000112>Solexa sequencing of coding RNA</obo:IAO_0000112>
+        <obo:IAO_0000115>An assay which uses high throughput sequencing technology to determine the sequence of nucleic acids</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>high throughput sequencing assay</oboInOwl:hasExactSynonym>
+        <rdfs:label>assay by high throughput sequencer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002772 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002772">
+        <efo:ArrayExpress_label>Assay by molecule</efo:ArrayExpress_label>
+        <rdfs:label>assay by molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002773 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002773">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <efo:ArrayExpress_label>Assay by technology</efo:ArrayExpress_label>
+        <rdfs:label>assay by instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003740 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002773"/>
+        <obo:IAO_0000115>An assay that exploits a sequencer as the instrument to find results.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:ArrayExpress_label>Sequencing assay</efo:ArrayExpress_label>
+        <oboInOwl:hasExactSynonym>sequencing assay</oboInOwl:hasExactSynonym>
+        <rdfs:label>assay by sequencer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0008931 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0008931">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001457"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010184"/>
+        <obo:IAO_0000115>Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:24056875</oboInOwl:hasDbXref>
+        <rdfs:label>Smart-seq2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0008994 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0008994">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001457"/>
+        <obo:IAO_0000115>assay that allows visualization and quantitative analysis of the transcriptome with spatial resolution in individual tissue sections</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>PMID:27365449</oboInOwl:hasDbXref>
+        <rdfs:label>spatial transcriptomics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0008995 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0008995">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
+        <obo:IAO_0000115>10x is a &quot;synthetic long-read&quot; technology and works by capturing a barcoded oligo-coated gel-bead and 0.3x genome copies into a single emulsion droplet, processing the equivalent of 1 million pipetting steps. Successive versions of the 10x chemistry use different barcode locations to improve the sequencing yield and quality of 10x experiments.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasBroadSynonym>10X</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>10x</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>10x Genomics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x single cell library construction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x sequencing</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>10x technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009899 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009899">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <obo:IAO_0000115>10X 3&apos; v2 is the second version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules. In the 3&apos; assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10X v2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10X v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10XV2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 3&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x v2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x_v2</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>10x 3&apos; v2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009900 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009900">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <obo:IAO_0000115>10X 5&apos; v2 is the second version of the 10x sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. In the 5&apos; assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 5&apos; v2 sequencing</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>10x 5&apos; v2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009922 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009922">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <obo:IAO_0000115>10X 3&apos; v3 is the third version of the 10x sequencing technology that sequences from the 3&apos; end of nucleic acid molecules.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>10X 3&apos; v3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X v3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10X v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10XV3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 3&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x v3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>10x 3&apos; v3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010183 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010183">
+        <obo:IAO_0000115>A library preparation process that starts from a single cell.</obo:IAO_0000115>
+        <dc:creator>Olamidipupo Ajigboye</dc:creator>
+        <oboInOwl:hasExactSynonym>single cell library preparation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single-cell library construction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single-cell library preparation</oboInOwl:hasExactSynonym>
+        <rdfs:label>single cell library construction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010184 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010184">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
+        <obo:IAO_0000115>Library construction method using the SMART (Switching Mechanism at the 5&apos; end of the RNA Template) or SMARTer technology, producing full-length cDNA libraries.</obo:IAO_0000115>
+        <dc:creator>Olamidipupo Ajigboye</dc:creator>
+        <rdfs:label>Smart-like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010961 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010961">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
+        <obo:IAO_0000115>A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <oboInOwl:hasExactSynonym>10X Visium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Visium</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
+        <rdfs:label>Visium Spatial Gene Expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010961"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-7505-5418</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0011025 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0011025">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <obo:IAO_0000115>10x 5&apos; v1 is the first version of the 10X sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. Differs from 3&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <oboInOwl:hasExactSynonym>10X 5&apos; v1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>10x 5&apos; v1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>10X 5&apos; v3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 5&apos; v1 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 5&apos; v3</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x 5&apos; v3 sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10x v1 5&apos; sequencing</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
+        <rdfs:label>10x 5&apos; v1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030003 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030003">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+        <obo:IAO_0000115>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <rdfs:label>10x 3&apos; transcription profiling</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-8674-0039</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030004 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030004">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+        <obo:IAO_0000115>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <rdfs:label>10x 5&apos; transcription profiling</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-8674-0039</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030005">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002697"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008994"/>
+        <obo:IAO_0000115>A spatial transcriptomics assay that measures spatially defined transcription by high-throughput sequencing.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <rdfs:label>spatial transcriptomics by high-throughput sequencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A spatial transcriptomics assay that measures spatially defined transcription by high-throughput sequencing.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-8674-0039</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030062 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030062">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
+        <obo:IAO_0000115>More sensitive version of the Slide-seq method for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, which differs from Slide-seq in the use of a monobase encoding scheme with sequencing by ligation using sequential interrogation by offset primer, and improved parameters for split-pool synthesis of barcoded beads.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-16T08:53:05Z</dc:date>
+        <rdfs:label>Slide-seqV2</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>More sensitive version of the Slide-seq method for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, which differs from Slide-seq in the use of a monobase encoding scheme with sequencing by ligation using sequential interrogation by offset primer, and improved parameters for split-pool synthesis of barcoded beads.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-8134-3037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://www.biorxiv.org/content/10.1101/2020.03.12.989806v1</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0030080 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030080">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
+        <obo:IAO_0000115>The 10x-based single-cell technology that sequences mRNA molecules.</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <rdfs:comment>This term should only be used when a single-cell RNA-seq dataset is known to be generated using 10x, but the specific protocol (5&apos; vs. 3&apos;) isn&apos;t specified. Whenever that information is available, please use EFO:0030003 &apos;10x 3&apos; transcription profiling&apos; or EFO:0030004 &apos;10x 5&apos; transcription profiling&apos;.</rdfs:comment>
+        <rdfs:label>10x transcription profiling</rdfs:label>
+        <rdfs:seeAlso>https://github.com/EBISPOT/efo/issues/1558</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The 10x-based single-cell technology that sequences mRNA molecules.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-3564-4813</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
