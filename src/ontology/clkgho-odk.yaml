@@ -16,4 +16,4 @@ export_formats:
 robot_java_args: '-Xmx16G'
 components:
   products:
-    - filename: efo_meriot.owl
+    - filename: efo_mireot.owl

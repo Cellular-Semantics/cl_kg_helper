@@ -2,6 +2,8 @@ format-version: 1.2
 data-version: clkgho/releases/2024-10-18/clkgho-full.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
+idspace: efo http://www.ebi.ac.uk/efo/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 ontology: clkgho/clkgho-full
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
@@ -11,4 +13,194 @@ property_value: owl:versionInfo "2024-10-18" xsd:string
 [Term]
 id: CLKGHO:0000000
 name: root node
+
+[Term]
+id: efo:EFO_0001457
+name: RNA assay
+def: "An assay with input RNA" []
+is_a: efo:EFO_0002772 ! assay by molecule
+is_a: OBI:0000070
+property_value: efo:ArrayExpress_label "RNA assay" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: efo:EFO_0002697
+name: assay by high throughput sequencer
+def: "An assay which uses high throughput sequencing technology to determine the sequence of nucleic acids" []
+synonym: "high throughput sequencing assay" EXACT []
+is_a: efo:EFO_0003740 ! assay by sequencer
+property_value: IAO:0000112 "Solexa sequencing of coding RNA" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+
+[Term]
+id: efo:EFO_0002772
+name: assay by molecule
+property_value: efo:ArrayExpress_label "Assay by molecule" xsd:string
+
+[Term]
+id: efo:EFO_0002773
+name: assay by instrument
+is_a: OBI:0000070
+property_value: efo:ArrayExpress_label "Assay by technology" xsd:string
+
+[Term]
+id: efo:EFO_0003740
+name: assay by sequencer
+def: "An assay that exploits a sequencer as the instrument to find results." []
+synonym: "sequencing assay" EXACT []
+is_a: efo:EFO_0002773 ! assay by instrument
+property_value: efo:ArrayExpress_label "Sequencing assay" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: efo:EFO_0008931
+name: Smart-seq2
+def: "Switch mechanism at the 5’ end of RNA templates (Smart). According to the authors, Smart-seq2 transcriptome libraries have improved detection, coverage, bias and accuracy compared to Smart-seq libraries, and are generated with off-the-shelf reagents at lower cost." []
+xref: PMID:24056875
+is_a: efo:EFO_0001457 ! RNA assay
+is_a: efo:EFO_0010184 ! Smart-like
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0008994
+name: spatial transcriptomics
+def: "assay that allows visualization and quantitative analysis of the transcriptome with spatial resolution in individual tissue sections" []
+xref: PMID:27365449
+is_a: efo:EFO_0001457 ! RNA assay
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0008995
+name: 10x technology
+def: "10x is a \"synthetic long-read\" technology and works by capturing a barcoded oligo-coated gel-bead and 0.3x genome copies into a single emulsion droplet, processing the equivalent of 1 million pipetting steps. Successive versions of the 10x chemistry use different barcode locations to improve the sequencing yield and quality of 10x experiments." []
+synonym: "10X" BROAD []
+synonym: "10x" BROAD []
+synonym: "10x Genomics" EXACT []
+synonym: "10X sequencing" RELATED []
+synonym: "10x sequencing" RELATED []
+synonym: "10x single cell library construction" EXACT []
+is_a: efo:EFO_0010183 ! single cell library construction
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0009899
+name: 10x 3' v2
+def: "10X 3' v2 is the second version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules. In the 3' assay, the polyd(T) sequence is part of the gel bead oligo (which also contains the 10x Barcode, UMI, and partial Illumina Read 1 sequence), with the template switch oligo (TSO) supplied in the RT Primer." []
+synonym: "10X 3' v2" EXACT []
+synonym: "10X 3' v2 sequencing" RELATED []
+synonym: "10x 3' v2 sequencing" RELATED []
+synonym: "10X v2" RELATED []
+synonym: "10x v2" RELATED []
+synonym: "10X v2 sequencing" RELATED []
+synonym: "10x v2 sequencing" RELATED []
+synonym: "10x_v2" RELATED []
+synonym: "10XV2" RELATED []
+is_a: efo:EFO_0030003 ! 10x 3' transcription profiling
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0009900
+name: 10x 5' v2
+def: "10X 5' v2 is the second version of the 10x sequencing technology that sequences from the 5' end of nucleic acid molecules. In the 5' assay, the polyd(T) is supplied in the RT Primer, and the template switch oligo (TSO) is part of the gel bead oligo." []
+synonym: "10X 5' v2" EXACT []
+synonym: "10X 5' v2 sequencing" RELATED []
+synonym: "10x 5' v2 sequencing" RELATED []
+is_a: efo:EFO_0030004 ! 10x 5' transcription profiling
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0009922
+name: 10x 3' v3
+def: "10X 3' v3 is the third version of the 10x sequencing technology that sequences from the 3' end of nucleic acid molecules." []
+synonym: "10X 3' v3" EXACT []
+synonym: "10x 3' v3 sequencing" RELATED []
+synonym: "10X v3" RELATED []
+synonym: "10x v3" RELATED []
+synonym: "10X v3 sequencing" RELATED []
+synonym: "10x v3 sequencing" RELATED []
+synonym: "10XV3" RELATED []
+is_a: efo:EFO_0030003 ! 10x 3' transcription profiling
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: efo:EFO_0010183
+name: single cell library construction
+def: "A library preparation process that starts from a single cell." []
+synonym: "single cell library preparation" EXACT []
+synonym: "single-cell library construction" EXACT []
+synonym: "single-cell library preparation" EXACT []
+property_value: dce:creator "Olamidipupo Ajigboye" xsd:string
+
+[Term]
+id: efo:EFO_0010184
+name: Smart-like
+def: "Library construction method using the SMART (Switching Mechanism at the 5' end of the RNA Template) or SMARTer technology, producing full-length cDNA libraries." []
+is_a: efo:EFO_0010183 ! single cell library construction
+property_value: dce:creator "Olamidipupo Ajigboye" xsd:string
+
+[Term]
+id: efo:EFO_0010961
+name: Visium Spatial Gene Expression
+def: "A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring." [http://orcid.org/0000-0001-7505-5418, https://pages.10xgenomics.com/rs/446-PBO-704/images/10x_LIT059_ProductSheet_VisiumSpatialGeneExpression_Letter_digital.pdf]
+subset: efo:added_for_HCA
+synonym: "10X Visium" EXACT []
+synonym: "Visium" EXACT []
+is_a: efo:EFO_0008995 ! 10x technology
+is_a: efo:EFO_0030005 ! spatial transcriptomics by high-throughput sequencing
+property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: efo:EFO_0011025
+name: 10x 5' v1
+def: "10x 5' v1 is the first version of the 10X sequencing technology that sequences from the 5' end of nucleic acid molecules. Differs from 3' v1 in the captured end from the polyadenylated transcript." []
+subset: efo:added_for_HCA
+synonym: "10X 5' v1" EXACT []
+synonym: "10x 5' v1" EXACT []
+synonym: "10x 5' v1 sequencing" RELATED []
+synonym: "10X 5' v3" RELATED []
+synonym: "10x 5' v3" RELATED []
+synonym: "10x 5' v3 sequencing" RELATED []
+synonym: "10x v1 5' sequencing" RELATED []
+is_a: efo:EFO_0030004 ! 10x 5' transcription profiling
+property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: efo:EFO_0030003
+name: 10x 3' transcription profiling
+def: "10x 3' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3' end." [https://orcid.org/0000-0002-8674-0039]
+is_a: efo:EFO_0030080 ! 10x transcription profiling
+property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: efo:EFO_0030004
+name: 10x 5' transcription profiling
+def: "10x 5' transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5' end." [https://orcid.org/0000-0002-8674-0039]
+is_a: efo:EFO_0030080 ! 10x transcription profiling
+property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: efo:EFO_0030005
+name: spatial transcriptomics by high-throughput sequencing
+def: "A spatial transcriptomics assay that measures spatially defined transcription by high-throughput sequencing." [https://orcid.org/0000-0002-8674-0039]
+is_a: efo:EFO_0002697 ! assay by high throughput sequencer
+is_a: efo:EFO_0008994 ! spatial transcriptomics
+property_value: dce:creator "paola" xsd:string
+
+[Term]
+id: efo:EFO_0030062
+name: Slide-seqV2
+def: "More sensitive version of the Slide-seq method for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, which differs from Slide-seq in the use of a monobase encoding scheme with sequencing by ligation using sequential interrogation by offset primer, and improved parameters for split-pool synthesis of barcoded beads." [http://orcid.org/0000-0001-8134-3037, https://www.biorxiv.org/content/10.1101/2020.03.12.989806v1]
+is_a: efo:EFO_0010183 ! single cell library construction
+is_a: efo:EFO_0030005 ! spatial transcriptomics by high-throughput sequencing
+property_value: dce:creator "paola" xsd:string
+property_value: dce:date "2021-12-16T08:53:05Z" xsd:dateTime
+
+[Term]
+id: efo:EFO_0030080
+name: 10x transcription profiling
+def: "The 10x-based single-cell technology that sequences mRNA molecules." [http://orcid.org/0000-0002-3564-4813]
+comment: This term should only be used when a single-cell RNA-seq dataset is known to be generated using 10x, but the specific protocol (5' vs. 3') isn't specified. Whenever that information is available, please use EFO:0030003 '10x 3' transcription profiling' or EFO:0030004 '10x 5' transcription profiling'.
+is_a: efo:EFO_0008995 ! 10x technology
+property_value: dce:creator "paola" xsd:string
+property_value: seeAlso "https://github.com/EBISPOT/efo/issues/1558" xsd:string
 

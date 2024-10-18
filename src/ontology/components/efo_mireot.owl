@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/clkgho/clkgho-full.owl#"
-     xml:base="http://purl.obolibrary.org/obo/clkgho/clkgho-full.owl"
-     xmlns:dce="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="http://www.ebi.ac.uk/efo/efo-base.owl#"
+     xml:base="http://www.ebi.ac.uk/efo/efo-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,14 +9,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/clkgho/clkgho-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clkgho/releases/2024-10-18/clkgho-full.owl"/>
-        <dcterms:description>None</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <dcterms:title>CL KG Helper Ontology</dcterms:title>
-        <owl:versionInfo>2024-10-18</owl:versionInfo>
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/efo/efo-base.owl">
+        <owl:versionIRI rdf:resource="http://www.ebi.ac.uk/efo/releases/v3.71.0/efo-base.owl"/>
     </owl:Ontology>
     
 
@@ -59,30 +54,6 @@
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -151,14 +122,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CLKGHO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLKGHO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
@@ -215,6 +178,7 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0003740 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002773"/>
         <obo:IAO_0000115>An assay that exploits a sequencer as the instrument to find results.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
@@ -323,7 +287,7 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010183">
         <obo:IAO_0000115>A library preparation process that starts from a single cell.</obo:IAO_0000115>
-        <dce:creator>Olamidipupo Ajigboye</dce:creator>
+        <dc:creator>Olamidipupo Ajigboye</dc:creator>
         <oboInOwl:hasExactSynonym>single cell library preparation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>single-cell library construction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>single-cell library preparation</oboInOwl:hasExactSynonym>
@@ -337,7 +301,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010184">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
         <obo:IAO_0000115>Library construction method using the SMART (Switching Mechanism at the 5&apos; end of the RNA Template) or SMARTer technology, producing full-length cDNA libraries.</obo:IAO_0000115>
-        <dce:creator>Olamidipupo Ajigboye</dce:creator>
+        <dc:creator>Olamidipupo Ajigboye</dc:creator>
         <rdfs:label>Smart-like</rdfs:label>
     </owl:Class>
     
@@ -349,7 +313,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
         <obo:IAO_0000115>A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <oboInOwl:hasExactSynonym>10X Visium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Visium</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
@@ -370,7 +334,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0011025">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030004"/>
         <obo:IAO_0000115>10x 5&apos; v1 is the first version of the 10X sequencing technology that sequences from the 5&apos; end of nucleic acid molecules. Differs from 3&apos; v1 in the captured end from the polyadenylated transcript.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <oboInOwl:hasExactSynonym>10X 5&apos; v1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>10x 5&apos; v1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>10X 5&apos; v3</oboInOwl:hasRelatedSynonym>
@@ -389,7 +353,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030003">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
         <obo:IAO_0000115>10x 3&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 3&apos; end.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <rdfs:label>10x 3&apos; transcription profiling</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -406,7 +370,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030004">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030080"/>
         <obo:IAO_0000115>10x 5&apos; transcription profiling is the 10x-based single-cell technology that sequences mRNA molecules from their 5&apos; end.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <rdfs:label>10x 5&apos; transcription profiling</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -424,7 +388,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002697"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008994"/>
         <obo:IAO_0000115>A spatial transcriptomics assay that measures spatially defined transcription by high-throughput sequencing.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <rdfs:label>spatial transcriptomics by high-throughput sequencing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -442,8 +406,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0010183"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0030005"/>
         <obo:IAO_0000115>More sensitive version of the Slide-seq method for transferring RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, which differs from Slide-seq in the use of a monobase encoding scheme with sequencing by ligation using sequential interrogation by offset primer, and improved parameters for split-pool synthesis of barcoded beads.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
-        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-16T08:53:05Z</dce:date>
+        <dc:creator>paola</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-12-16T08:53:05Z</dc:date>
         <rdfs:label>Slide-seqV2</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -461,7 +425,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0030080">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008995"/>
         <obo:IAO_0000115>The 10x-based single-cell technology that sequences mRNA molecules.</obo:IAO_0000115>
-        <dce:creator>paola</dce:creator>
+        <dc:creator>paola</dc:creator>
         <rdfs:comment>This term should only be used when a single-cell RNA-seq dataset is known to be generated using 10x, but the specific protocol (5&apos; vs. 3&apos;) isn&apos;t specified. Whenever that information is available, please use EFO:0030003 &apos;10x 3&apos; transcription profiling&apos; or EFO:0030004 &apos;10x 5&apos; transcription profiling&apos;.</rdfs:comment>
         <rdfs:label>10x transcription profiling</rdfs:label>
         <rdfs:seeAlso>https://github.com/EBISPOT/efo/issues/1558</rdfs:seeAlso>
