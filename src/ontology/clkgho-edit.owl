@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/clkgho.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,38 +9,37 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/clkgho.owl>
-
-
-
-
-Import(<http://purl.obolibrary.org/obo/clkgho/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/clkgho/components/efo_mireot.owl>)
-Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Import(<http://purl.obolibrary.org/obo/clkgho/patterns/definitions.owl>)
+Annotation(dcterms:description "A helper ontology for the Cell Ontology Knowledge Graph.  This is not intended for external use!  May contain axioms that are not approved by originating ontologies!")
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "CL KG Helper Ontology")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/CLKGHO_0000000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002473>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015003>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#broadMatch>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000663>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/CLKGHO_0000000> (root node)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLKGHO_0000000> "root node"@en)
 
 
+
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0015003> <http://purl.obolibrary.org/obo/RO_0002473>) <http://www.w3.org/2004/02/skos/core#broadMatch>)
 )
-
